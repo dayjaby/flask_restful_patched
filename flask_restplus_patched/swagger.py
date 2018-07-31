@@ -1,4 +1,4 @@
-from apispec.ext.marshmallow import openapi_converter
+from flasgger.marshmallow_apispec import openapi_converter
 schema2parameters = openapi_converter.schema2parameters
 from flask_restplus.swagger import Swagger as OriginalSwagger
 
