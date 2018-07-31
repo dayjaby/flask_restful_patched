@@ -1,4 +1,8 @@
-from flasgger.marshmallow_apispec import fields2jsonschema, field2property
+from flasgger.marshmallow_apispec import openapi_converter
+
+fields2jsonschema = openapi_converter.fields2jsonschema
+fields2property = openapi_converter.field2property
+
 import flask_marshmallow
 from werkzeug import cached_property
 
