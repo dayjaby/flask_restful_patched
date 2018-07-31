@@ -1,4 +1,4 @@
-from apispec.ext.marshmallow.swagger import fields2jsonschema, field2property
+from flasgger.marshmallow_apispec import fields2jsonschema, field2property
 import flask_marshmallow
 from werkzeug import cached_property
 

@@ -15,7 +15,15 @@ setuptools.setup(
     long_description_content_type="text/x-rst",
     url="https://github.com/dayjaby/flask_restplus_patched",
     packages=setuptools.find_packages(),
-    install_requires=['flask_restplus'],
+    install_requires=[
+        'flask_restplus',
+        'marshmallow',
+        'flask_marshmallow',
+        'flask_sqlalchemy',
+        'webargs',
+        'apispec',
+        'flasgger'
+    ],
     setup_requires=['setuptools-git-version'],
     classifiers=[
         "Programming Language :: Python",
